@@ -1,0 +1,45 @@
+:root {
+  --maxWidth: 1400px;
+  --white: #ffffff;
+  --darkBlue: #13131d;
+  --lightBlue: #171B27;
+  --grey: rgba(225, 225, 225, .5);
+  --black: #000000;
+  --fontSuperBig: 2.5rem;
+  --fontBig: 1.5rem;
+  --fontMed: 1.2rem;
+  --fontSm: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: poppins, sans-serif;
+  color: var(--white);
+  letter-spacing: 1px;
+  width: 100%;
+  background-color: var(--darkBlue);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+

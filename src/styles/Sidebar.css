@@ -1,0 +1,144 @@
+/*! SIDEBAR CONTAINER STYLES */
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  max-width: 22%;
+  background-color: var(--darkBlue);
+  min-height: 100vh;
+  flex: 0 0 22%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.sidebar .active {
+  background-color: var(--lightBlue) !important;
+}
+
+.sidebar .title {
+  font-size: 1.3rem;
+  color: var(--white);
+  padding: 0 4rem;
+}
+
+.sidebar .title1 {
+  margin: 2.5rem 0 1.5rem;
+}
+
+.sidebar .title2 {
+  margin: 3.5rem 0 1rem;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  width: 7%;
+  border-radius: 3rem;
+  background-color: var(--white);
+}
+
+.sidebar a {
+  text-decoration: none !important;
+}
+
+/*! SIDEBAR LOGO STYLES */
+.logoImg {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*! SIDEBAR LINK */
+.sidebarLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 2rem;
+}
+
+.sidebarLink:hover {
+  background-color: var(--lightBlue);
+  transition: background-color 0.3s ease-out;
+}
+
+.sidebarIcon {
+  font-size: 2.5rem !important;
+  color: var(--grey);
+  margin: 1.5rem;
+}
+
+/*! SIDEBAR-LINK-TEXT STYLES */
+.sidebarLinkText {
+  font-size: 1.3rem;
+  color: var(--grey);
+  font-weight: 400;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .sidebar {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+
+  .logoImg {
+    width: 70%;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .sidebarLink {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .sidebarLinkText {
+    font-size: 1rem;
+  }
+
+  .sidebarIcon {
+    font-size: 3rem !important;
+    margin: 1.2rem;
+  }
+
+  .sidebar .title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .sidebarIcon {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    position: fixed;
+  }
+
+  .logoImg {
+    width: 100%;
+  }
+
+  .sidebarLink {
+    padding: 1.5rem 0;
+  }
+
+  .sidebarLinkText {
+    display: none;
+  }
+
+  .sidebarIcon {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .sidebar {
+    position: relative;
+  }
+}

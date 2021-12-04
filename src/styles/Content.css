@@ -1,0 +1,44 @@
+.content {
+  min-height: 100vh;
+  background-color: var(--lightBlue);
+  flex: 0 0 78%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  position: relative;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
+    flex: 0 0 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 1.5rem 0;
+  }
+}
+.missing{
+  text-align: center;
+  padding-top: 4rem;
+}
+.missingText{
+  font-family: poppins, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.missingImg{
+  width: 70%;
+}
+
+.missingLink{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
